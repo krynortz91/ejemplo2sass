@@ -1,0 +1,34 @@
+//Pasamos los parametros entre los parentesis
+//Cuando los atributos son especificos
+//Los dos puntos(:) son para ingresar atributos por default
+
+@mixin cuadrado($fondo,$ancho,$alto:50px){
+    background-color: $fondo;
+    width: $ancho;
+    height: $alto;
+    margin-top: 10px;
+}
+section{
+    width: 100%;
+    height: 350px;
+    border: 1px solid blue;
+    article{
+        margin-top: 20px;
+        width: 55%;
+        height: 300px;
+        border: 1px solid blue;
+        float: left;
+        .cuadrado-1{
+            @include cuadrado(green,200px);
+        }
+        .cuadrado-2{
+            @include cuadrado(blue,100px);
+        }
+        .cuadrado-3{
+            @include cuadrado(black,150px);
+        }
+        .cuadrado-4{
+            @include cuadrado(yellow,300px);
+        }
+    }
+}

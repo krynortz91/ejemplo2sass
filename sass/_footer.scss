@@ -1,0 +1,29 @@
+footer{
+    width: 500px;
+    height: 80px;
+    border: 1px solid red;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .leftCircle{
+        height: 70px;
+        width:70px;
+        border: 1px solid yellow;
+        border-radius: 50%;
+    }
+    .credenciales{
+        height: 70px;
+        width:300px;
+        border: 1px solid yellow;
+        text-align: center;
+    }
+    .rightCircle{
+        height: 70px;
+        width: 70px;
+        border: 1px solid yellow;
+        border-radius: 50%;
+    }
+    
+
+}
